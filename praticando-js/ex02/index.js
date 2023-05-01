@@ -18,11 +18,23 @@
 // const copo = fazerSuco("banana", "maça");
 // console.log(copo);
 
-let subject = 'create video'
-function createThink(subject) {
-    subject = 'study'
-    return subject
+// let subject = 'create video'
+// function createThink(subject) {
+//     subject = 'study'
+//     return subject
+// }
+
+// console.log(subject);
+// console.log(createThink(subject));
+
+function sayMyName(name) {
+    console.log('antes da callback')
+    name()
+    console.log('dps da callback')
 }
 
-console.log(subject);
-console.log(createThink(subject));
+sayMyName(
+    ()=>{
+        console.log('estou em uma callback')
+    }
+)
