@@ -27,14 +27,26 @@
 // console.log(subject);
 // console.log(createThink(subject));
 
-function sayMyName(name) {
-    console.log('antes da callback')
-    name()
-    console.log('dps da callback')
+// function sayMyName(name) {
+//     console.log('antes da callback')
+//     name()
+//     console.log('dps da callback')
+// }
+
+// sayMyName(
+//     ()=>{
+//         console.log('estou em uma callback')
+//     }
+// )
+
+function Person(name) {
+    this.name = name
+    this.walk = function() {
+        return this.name + ' está andando'
+    }
 }
 
-sayMyName(
-    ()=>{
-        console.log('estou em uma callback')
-    }
-)
+const mayk = new Person("mayk")
+const joao = new Person("joão")
+console.log(mayk.walk())
+console.log(joao.walk())
