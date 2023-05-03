@@ -32,27 +32,50 @@
 //         break
 // }
 
-function calculate(number1, operator, number2) {
-    let result = 0;
+// function calculate(number1, operator, number2) {
+//     let result = 0;
 
-    switch(operator) {
-        case '+':
-            result = number1 + number2;
-            break
-        case '-':
-            result = number1 - number2;
-            break
-        case '*':
-            result = number1 * number2;
-            break
-        case '/':
-            result = number1 / number2;
-            break
-        default:
-            console.log('Não é um número');
-            break
+//     switch(operator) {
+//         case '+':
+//             result = number1 + number2;
+//             break
+//         case '-':
+//             result = number1 - number2;
+//             break
+//         case '*':
+//             result = number1 * number2;
+//             break
+//         case '/':
+//             result = number1 / number2;
+//             break
+//         default:
+//             console.log('Não é um número');
+//             break
+//     }
+//     return result
+// }
+
+// console.log(calculate(4, '%', 8))
+
+
+// throw = significa disparar-lançar
+
+function sayMyName(name = '') {
+    if (name === '') {
+        // throw new Error('nome é necessário')  , outra forma de fazer o disparo 
+        throw 'Nome é obrigatório'
     }
-    return result
+     
+
+    console.log(name)
 }
 
-console.log(calculate(4, '%', 8))
+// try = tentar/testar...catch = pegar
+try {
+    sayMyName('Mayk')
+} catch(e) {
+    console.log(e)
+}
+
+console.log('Após o try/catch')
+
