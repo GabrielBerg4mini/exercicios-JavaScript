@@ -70,9 +70,17 @@
 // let date = new Date('2020-12-01')   //.__proto__, para acessar o prototype de qualquer array,variável.
 // console.log(date.__proto__)
 
-const person = { 
-    name: 'mayk',
-    age: '23',
-}                       // usar o delete para tirar alguma propriedade de person
-delete person.age
-console.log(person)  
+// const person = { 
+//     name: 'mayk',
+//     age: '23',
+// }                       // usar o delete para tirar alguma propriedade de person
+// delete person.age
+// console.log(person)  
+
+// condição 1 ou se n o 2  condition ? value1 : value2
+let pao = true;
+let queijo = false;
+
+const niceBreakFast = pao && queijo? 'Café top' : 'Café ruim';
+                       // ||                          
+console.log(niceBreakFast)
