@@ -60,22 +60,38 @@
 
 // throw = significa disparar-lançar
 
-function sayMyName(name = '') {
-    if (name === '') {
-        // throw new Error('nome é necessário')  , outra forma de fazer o disparo 
-        throw 'Nome é obrigatório'
-    }
+// function sayMyName(name = '') {
+//     if (name === '') {
+//         // throw new Error('nome é necessário')  , outra forma de fazer o disparo 
+//         throw 'Nome é obrigatório'
+//     }
      
 
-    console.log(name)
+//     console.log(name)
+// }
+
+// // try = tentar/testar...catch = pegar
+// try {
+//     sayMyName('Mayk')
+// } catch(e) {
+//     console.log(e)
+// }
+
+// console.log('Após o try/catch')
+
+//for 
+// break para a exç do loop
+// continue - pula a exç do momento
+
+for(let i = 10; i > 0; i--) {
+    if(i === 5) {
+        continue;
+    }
+    console.log(i)
 }
 
-// try = tentar/testar...catch = pegar
-try {
-    sayMyName('Mayk')
-} catch(e) {
-    console.log(e)
+//while
+
+while (true) {
+
 }
-
-console.log('Após o try/catch')
-
