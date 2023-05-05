@@ -83,15 +83,26 @@
 // break para a exç do loop
 // continue - pula a exç do momento
 
-for(let i = 10; i > 0; i--) {
-    if(i === 5) {
-        continue;
-    }
-    console.log(i)
-}
+// for(let i = 10; i > 0; i--) {
+//     if(i === 5) {
+//         continue;
+//     }
+//     console.log(i)
+// }
 
 //while
+// let i = 0;
+// while (i < 10) {
+//     console.log(i)
 
-while (true) {
+//     i++
+// }
 
+//for...of
+
+let name = 'mayk'
+let names = [ 'joão', 'marco', 'pedro']
+
+for(let name of names) {
+    console.log(name )
 }
