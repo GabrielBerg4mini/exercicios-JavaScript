@@ -100,9 +100,22 @@
 
 //for...of
 
-let name = 'mayk'
-let names = [ 'joão', 'marco', 'pedro']
+// let name = 'mayk'
+// let names = [ 'joão', 'marco', 'pedro']
 
-for(let name of names) {
-    console.log(name )
-}
+// for(let name of names) {
+//     console.log(name )
+// }
+
+//for..in
+
+// let person = { 
+//     name:'Joao',
+//     age: 30,
+//     weight: 68.6
+// }
+
+// for(let property in person) {
+//     console.log(property)
+//     console.log(person[property])
+// }
