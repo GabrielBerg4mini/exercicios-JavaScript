@@ -11,7 +11,7 @@ function transformDeGree(degree) {
 
   //flux ideal, F -> C
   let updatedDegree = Number(degree.toUpperCase().replace("F", ""));
-  let formula = fahrenheit => (fahrenheit - 32) * 5/9 // se tem apenas um argumento(parametro), pode tirar () na arrow function
+  let formula = fahrenheit => (fahrenheit - 32) * 5/9 // se tem apenas um argumento(parâmetro), pode tirar () na arrow function
   let degreeSign = 'C'
 
   //flux alternativo C -> F
