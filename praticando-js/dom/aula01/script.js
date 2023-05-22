@@ -1,7 +1,13 @@
 const element = document.querySelector('body');
-element.style.backgroundColor = 'red'
+element.classList.add('active', 'green')
+// element.classList.remove('active')
+element.classList.toggle('active')
+console.log(element.classList)
 
 
+
+// const element = document.querySelector('body');
+// element.style.backgroundColor = 'red'
 
 // const header = document.querySelector('header');
 // header.setAttribute('id','header');
