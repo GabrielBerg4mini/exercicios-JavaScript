@@ -1,10 +1,12 @@
-const element = document.querySelector('body');
-element.classList.add('active', 'green')
-// element.classList.remove('active')
-element.classList.toggle('active')
-console.log(element.classList)
 
+const body = document.querySelector('body');
+console.log(body.parentElement)
 
+// const element = document.querySelector('body');
+// element.classList.add('active', 'green')
+// // element.classList.remove('active')
+// element.classList.toggle('active')
+// console.log(element.classList)
 
 // const element = document.querySelector('body');
 // element.style.backgroundColor = 'red'
